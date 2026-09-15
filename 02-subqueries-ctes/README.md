@@ -2,27 +2,29 @@
 
 ## Scope
 
-This section focuses on breaking more complex analytical questions into reusable intermediate steps.
+This section focuses on breaking complex analytical questions into smaller, reusable steps.
 
 ## Concepts practiced
 
-- Subqueries in the `SELECT` clause
-- Subqueries in the `FROM` clause
-- Subqueries in the `WHERE` clause
+- Subqueries in `SELECT`
+- Subqueries in `FROM`
+- Subqueries in `WHERE`
 - Common Table Expressions (`WITH`)
 - Multiple CTEs
 - Rewriting nested logic into more readable SQL
 
-## Analytical skills
+## Practice questions
 
-Typical patterns covered here include:
+The reviewed SQL file includes examples such as:
 
-- Comparing row-level values with overall aggregates
-- Building intermediate grouped datasets
-- Filtering against dynamically calculated reference values
-- Reusing prepared result sets
-- Improving readability of multi-step queries
+- Comparing each product price with the overall average price
+- Showing each product together with the number of products from the same factory
+- Filtering products against a dynamically calculated reference set
+- Counting orders whose total value exceeds a threshold
+- Rewriting derived-table logic using multiple CTEs
 
-## Portfolio milestone
+## SQL
 
-A public SQL practice file will be added after the exercises are reviewed and rewritten as clearly understood implementations.
+[View `subqueries_ctes.sql`](subqueries_ctes.sql)
+
+The file is published as reviewed course-based practice, not as original production code.
