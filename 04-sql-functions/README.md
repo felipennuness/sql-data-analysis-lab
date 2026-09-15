@@ -9,20 +9,22 @@ This section focuses on transforming, standardizing, and interpreting values dir
 - Numeric functions
 - Datetime functions
 - String functions
-- Pattern matching
+- Pattern / substring handling
 - NULL-handling functions
+- Ranking-assisted fallback logic
 
-## Analytical skills
+## Practice questions
 
-The exercises reinforce how SQL functions can be used to:
+The reviewed SQL file includes examples such as:
 
-- Derive metrics from numeric values
-- Extract and compare date components
-- Calculate time intervals
-- Standardize and combine text fields
-- Search text patterns
-- Replace, detect, and reason about missing values
+- Grouping customers into spending bands
+- Filtering Q2 orders and calculating an estimated ship date
+- Standardizing factory names and generating composite identifiers
+- Extracting text after a delimiter
+- Filling missing division values with either a generic label or the most common division for the same factory
 
-## Portfolio milestone
+## SQL
 
-Public SQL examples will be added after the exercises are reviewed and rewritten as concise, documented practice queries.
+[View `sql_functions.sql`](sql_functions.sql)
+
+The file is published as reviewed course-based practice, not as original production code.
