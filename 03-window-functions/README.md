@@ -2,31 +2,34 @@
 
 ## Scope
 
-This section focuses on analytical calculations that preserve row-level detail while adding rankings, comparisons, and distribution metrics.
+This section focuses on analytical calculations that preserve row-level detail while adding sequencing, ranking, comparisons, and distribution metrics.
 
 ## Concepts practiced
 
 - `ROW_NUMBER()`
-- `RANK()`
 - `DENSE_RANK()`
-- First / last / nth-value concepts
-- `LEAD()`
+- Tie-aware ranking
 - `LAG()`
 - `NTILE()`
 - `PARTITION BY`
 - Window ordering
 
-## Analytical skills
+## Practice questions
 
-This section supports patterns such as:
+The reviewed SQL file includes examples such as:
 
-- Sequencing transactions within each customer
-- Ranking products within an order
-- Handling ties correctly
-- Comparing current values with previous or next values
-- Dividing entities into percentile-style groups
-- Building analytical calculations without collapsing the underlying rows
+- Numbering customer transactions in sequence
+- Ranking products within each order while preserving ties
+- Returning the second-highest quantity level in each order
+- Comparing each customer order with the previous order
+- Identifying the top 1% of customers by total spend
 
-## Portfolio milestone
+## Implementation note
 
-Public SQL examples will be added here after the window-function exercises are reviewed and documented as independently understood work.
+The course reference material explicitly notes that an `NTH_VALUE()` approach for the second-most-popular product can be inaccurate when ties exist. The public practice file therefore uses the `DENSE_RANK()` alternative.
+
+## SQL
+
+[View `window_functions.sql`](window_functions.sql)
+
+The file is published as reviewed course-based practice, not as original production code.
