@@ -2,26 +2,27 @@
 
 ## Scope
 
-This section focuses on combining relational tables and understanding how different join strategies affect the analytical result.
+This section focuses on combining relational tables and understanding how join strategy changes the analytical result.
 
 ## Concepts practiced
 
-- `INNER JOIN`
 - `LEFT JOIN`
-- `RIGHT JOIN`
-- Identifying records that exist in one table but not another
+- Unmatched-record analysis
 - Join-key validation
 - Self joins
 - Comparing records within the same table
+- Preventing mirrored duplicate pairs in self-join output
 
-## Analytical skills
+## Practice questions
 
-The exercises in this section are designed to reinforce questions such as:
+The reviewed SQL file answers questions such as:
 
-- Which records fail to match across related tables?
-- Which products or entities have no corresponding activity?
-- How can one row be compared with other rows from the same table?
+- Which products exist in the product catalog but have never appeared in orders?
+- Are there order rows whose product key does not match the catalog?
+- Which different products are priced within $0.25 of each other?
 
-## Portfolio milestone
+## SQL
 
-A public SQL practice file will be added here after the join exercises are reviewed and documented as independently understood implementations.
+[View `joins.sql`](joins.sql)
+
+The file is published as reviewed course-based practice, not as original production code.
