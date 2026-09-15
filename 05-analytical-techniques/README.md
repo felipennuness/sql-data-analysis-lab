@@ -7,22 +7,25 @@ This section combines SQL features into common analytical and data-quality patte
 ## Concepts practiced
 
 - Duplicate-value analysis
-- Min / max value filtering
+- Deduplication with window functions
+- Max-value filtering
 - Conditional aggregation
 - Pivot-style summaries
 - Rolling calculations
 - Cumulative calculations
+- Moving averages
 
-## Analytical skills
+## Practice questions
 
-The exercises in this section are designed to strengthen patterns such as:
+The reviewed SQL file includes examples such as:
 
-- Detecting and understanding duplicated records
-- Returning rows associated with extreme values
-- Turning categorical values into summary columns
-- Calculating cumulative totals over time
-- Combining aggregation with analytical windows
+- Keeping the latest row for duplicated student records
+- Returning each student's highest grade and corresponding class while preserving ties
+- Building a grade-level summary by department
+- Calculating monthly sales, cumulative sales, and a six-month moving average
 
-## Portfolio milestone
+## SQL
 
-Public SQL examples will be added after the exercises are reviewed and documented as independently understood implementations.
+[View `analytical_techniques.sql`](analytical_techniques.sql)
+
+The file is published as reviewed course-based practice, not as original production code.
