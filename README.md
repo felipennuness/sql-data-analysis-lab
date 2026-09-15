@@ -1,15 +1,17 @@
 # SQL Data Analysis Lab
 
 ![Status](https://img.shields.io/badge/status-in%20progress-orange)
-![SQL](https://img.shields.io/badge/SQL-Advanced%20Practice-336791)
+![SQL](https://img.shields.io/badge/SQL-Analytical%20Practice-336791)
 ![MySQL](https://img.shields.io/badge/MySQL-Analytics-4479A1)
 ![Analytics](https://img.shields.io/badge/focus-Data%20Analysis-1f4b99)
 
-> Structured SQL practice repository focused on analytical problem solving with MySQL. This portfolio case documents the concepts practiced and will progressively include my own query implementations and analytical case-study work.
+> Structured MySQL practice repository covering relational analysis, CTEs, window functions, data transformation, data-quality patterns, rolling calculations, and a final analytical case study.
 
 ## Overview
 
-This repository organizes practical SQL studies from foundational relational analysis through more advanced analytical techniques.
+This repository organizes practical SQL studies from relational analysis through more advanced analytical techniques.
+
+The public SQL files are **reviewed practice implementations based on the course exercise set and reference material**. They are published as study work, not as original production or client code.
 
 The learning path covers:
 
@@ -20,72 +22,54 @@ The learning path covers:
 5. **Data-quality and analytical techniques**
 6. **Final analytical case study**
 
-The goal is not to publish course answer keys. The repository is structured to document the skills practiced and progressively add independently understood and implemented SQL queries.
-
 See [Course & Portfolio Context](COURSE_CONTEXT.md).
 
 ## Learning path
 
 ### 1. Joins
 
-Topics practiced:
+Practice includes unmatched-record analysis and self joins for comparing rows from the same table.
 
-- Basic joins
-- LEFT / RIGHT join reasoning
-- Identifying unmatched records
-- Self joins
-- Comparing rows within the same table
+**Topics:** `LEFT JOIN`, relational validation, unmatched records, self joins, pairwise comparisons.
 
-[View section →](01-joins/README.md)
+[View notes →](01-joins/README.md)  
+[View SQL →](01-joins/joins.sql)
 
 ### 2. Subqueries & CTEs
 
-Topics practiced:
+Practice includes scalar subqueries, derived tables, filters based on dynamic reference values, single CTEs, and multiple CTEs.
 
-- Subqueries in `SELECT`
-- Subqueries in `FROM`
-- Subqueries in `WHERE`
-- Common Table Expressions
-- Multiple CTEs
-- Breaking complex analysis into readable steps
+**Topics:** subqueries in `SELECT`, `FROM`, `WHERE`, `WITH`, multiple CTEs, readable multi-step analysis.
 
-[View section →](02-subqueries-ctes/README.md)
+[View notes →](02-subqueries-ctes/README.md)  
+[View SQL →](02-subqueries-ctes/subqueries_ctes.sql)
 
 ### 3. Window Functions
 
-Topics practiced:
+Practice includes transaction sequencing, ranking with ties, previous-row comparison, and percentile-style segmentation.
 
-- `ROW_NUMBER()`
-- `RANK()` / `DENSE_RANK()`
-- First / last / nth-value concepts
-- `LEAD()` / `LAG()`
-- `NTILE()`
-- Partitioning and ordering analytical windows
+**Topics:** `ROW_NUMBER()`, `DENSE_RANK()`, `LAG()`, `NTILE()`, `PARTITION BY`, analytical ordering.
 
-[View section →](03-window-functions/README.md)
+[View notes →](03-window-functions/README.md)  
+[View SQL →](03-window-functions/window_functions.sql)
 
 ### 4. SQL Functions
 
-Topics practiced:
+Practice includes value transformation and standardization directly in SQL.
 
-- Numeric functions
-- Datetime functions
-- String functions
-- Pattern matching
-- NULL handling
+**Topics:** numeric functions, datetime functions, string manipulation, pattern handling, `COALESCE()`, ranking-assisted NULL replacement.
 
-[View section →](04-sql-functions/README.md)
+[View notes →](04-sql-functions/README.md)  
+[View SQL →](04-sql-functions/sql_functions.sql)
 
 ### 5. Analytical Techniques
 
-Topics practiced:
+Practice combines SQL features into common data-quality and analytical patterns.
 
-- Duplicate-value analysis
-- Min / max filtering
-- Pivot-style analysis with conditional aggregation
-- Rolling and cumulative calculations
+**Topics:** deduplication, max-value filtering, conditional aggregation, pivot-style summaries, cumulative totals, moving averages.
 
-[View section →](05-analytical-techniques/README.md)
+[View notes →](05-analytical-techniques/README.md)  
+[View SQL →](05-analytical-techniques/analytical_techniques.sql)
 
 ## Final analytical case study
 
@@ -98,9 +82,10 @@ The analysis is organized into four areas:
 - **Player career analysis** — debut/final-game age, career length, and team history
 - **Player comparison analysis** — shared birthdays, batting-side distributions, and decade-over-decade physical trends
 
-Techniques used across the case include joins, CTEs, window functions, datetime functions, string aggregation, conditional aggregation, rolling calculations, and ranking.
+The reviewed implementation includes joins, CTEs, window functions, datetime functions, string aggregation, conditional aggregation, rolling calculations, ranking, and tie-aware analysis.
 
-[View final case-study scope →](final-case-study/README.md)
+[View case-study notes →](final-case-study/README.md)  
+[View SQL →](final-case-study/baseball_analysis.sql)
 
 ## Repository structure
 
@@ -109,28 +94,36 @@ Techniques used across the case include joins, CTEs, window functions, datetime 
 ├── README.md
 ├── COURSE_CONTEXT.md
 ├── 01-joins/
-│   └── README.md
+│   ├── README.md
+│   └── joins.sql
 ├── 02-subqueries-ctes/
-│   └── README.md
+│   ├── README.md
+│   └── subqueries_ctes.sql
 ├── 03-window-functions/
-│   └── README.md
+│   ├── README.md
+│   └── window_functions.sql
 ├── 04-sql-functions/
-│   └── README.md
+│   ├── README.md
+│   └── sql_functions.sql
 ├── 05-analytical-techniques/
-│   └── README.md
+│   ├── README.md
+│   └── analytical_techniques.sql
 └── final-case-study/
-    └── README.md
+    ├── README.md
+    └── baseball_analysis.sql
 ```
 
 ## Portfolio integrity
 
-The study package used as a reference includes both exercise files and solution files. **Course solution files are intentionally not published in this repository as personal work.**
+The original study package contains both exercise files and instructor/reference solution files.
 
-As this lab evolves, the public SQL files will contain only queries that are reviewed, understood, and documented as part of my own practice.
+This repository does **not** publish those solution files verbatim as original personal work. Instead, it contains curated practice implementations organized, reviewed, simplified, and documented for learning purposes. Where the reference material itself identifies an inaccurate or weaker approach, the public version uses the corrected/tie-aware alternative.
 
-## Next step
+The final case also includes a small number of clearly commented refinements where the implementation was aligned more closely with the wording of the analytical question.
 
-The next milestone is to add SQL implementations section by section, beginning with joins and moving through the final analytical case study.
+## Current status
+
+The first reviewed implementation is now available across all five study sections and the final case study. Future updates can add query-result screenshots, additional exercises, and independently designed SQL business cases.
 
 ---
 
