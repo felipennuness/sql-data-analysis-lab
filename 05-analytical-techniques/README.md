@@ -1,31 +1,31 @@
-# 05 — Analytical Techniques
+# 05 — Técnicas Analíticas
 
-## Scope
+## Escopo
 
-This section combines SQL features into common analytical and data-quality patterns.
+Esta seção combina recursos de SQL em padrões comuns de análise e qualidade de dados.
 
-## Concepts practiced
+## Conceitos praticados
 
-- Duplicate-value analysis
-- Deduplication with window functions
-- Max-value filtering
-- Conditional aggregation
-- Pivot-style summaries
-- Rolling calculations
-- Cumulative calculations
-- Moving averages
+- Análise de valores duplicados
+- Remoção de duplicidades com funções de janela
+- Filtros por valor máximo
+- Agregação condicional
+- Resumos no formato de tabela dinâmica
+- Cálculos móveis
+- Cálculos acumulados
+- Médias móveis
 
-## Practice questions
+## Questões práticas
 
-The reviewed SQL file includes examples such as:
+O arquivo SQL revisado inclui exemplos como:
 
-- Keeping the latest row for duplicated student records
-- Returning each student's highest grade and corresponding class while preserving ties
-- Building a grade-level summary by department
-- Calculating monthly sales, cumulative sales, and a six-month moving average
+- Manter a linha mais recente de registros duplicados de estudantes
+- Retornar a maior nota de cada estudante e a turma correspondente, preservando empates
+- Criar um resumo de notas por departamento
+- Calcular vendas mensais, vendas acumuladas e uma média móvel de seis meses
 
 ## SQL
 
-[View `analytical_techniques.sql`](analytical_techniques.sql)
+[Acessar `analytical_techniques.sql`](analytical_techniques.sql)
 
-The file is published as reviewed course-based practice, not as original production code.
+O arquivo é publicado como exercício revisado com base no conteúdo do curso, e não como código original de produção.
