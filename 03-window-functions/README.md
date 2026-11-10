@@ -1,35 +1,35 @@
-# 03 — Window Functions
+# 03 — Funções de Janela
 
-## Scope
+## Escopo
 
-This section focuses on analytical calculations that preserve row-level detail while adding sequencing, ranking, comparisons, and distribution metrics.
+Esta seção aborda cálculos analíticos que preservam os detalhes de cada linha enquanto adicionam sequenciamento, classificação, comparações e métricas de distribuição.
 
-## Concepts practiced
+## Conceitos praticados
 
 - `ROW_NUMBER()`
 - `DENSE_RANK()`
-- Tie-aware ranking
+- Classificação considerando empates
 - `LAG()`
 - `NTILE()`
 - `PARTITION BY`
-- Window ordering
+- Ordenação em funções de janela
 
-## Practice questions
+## Questões práticas
 
-The reviewed SQL file includes examples such as:
+O arquivo SQL revisado inclui exemplos como:
 
-- Numbering customer transactions in sequence
-- Ranking products within each order while preserving ties
-- Returning the second-highest quantity level in each order
-- Comparing each customer order with the previous order
-- Identifying the top 1% of customers by total spend
+- Numerar transações de clientes em sequência
+- Classificar produtos dentro de cada pedido preservando empates
+- Retornar o segundo maior nível de quantidade em cada pedido
+- Comparar cada pedido de um cliente com o pedido anterior
+- Identificar o 1% de clientes com maior gasto total
 
-## Implementation note
+## Observação de implementação
 
-The course reference material explicitly notes that an `NTH_VALUE()` approach for the second-most-popular product can be inaccurate when ties exist. The public practice file therefore uses the `DENSE_RANK()` alternative.
+O material de referência do curso destaca explicitamente que uma abordagem com `NTH_VALUE()` para encontrar o segundo produto mais popular pode apresentar resultados incorretos quando existem empates. Por isso, o arquivo público de exercícios utiliza a alternativa com `DENSE_RANK()`.
 
 ## SQL
 
-[View `window_functions.sql`](window_functions.sql)
+[Acessar `window_functions.sql`](window_functions.sql)
 
-The file is published as reviewed course-based practice, not as original production code.
+O arquivo é publicado como exercício revisado com base no conteúdo do curso, e não como código original de produção.
