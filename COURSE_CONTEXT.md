@@ -1,16 +1,16 @@
-# Study Context
+# Contexto dos Estudos
 
-This repository is personal documentation from my SQL studies in MySQL.
+Este repositório reúne minha documentação pessoal dos estudos de SQL com MySQL.
 
-The material is organized into:
+O material está organizado em:
 
-1. Joins
-2. Subqueries and CTEs
-3. Window functions
-4. SQL functions
-5. Analytical techniques
-6. Final baseball analysis project
+1. Junções (Joins)
+2. Subconsultas e CTEs
+3. Funções de janela
+4. Funções SQL
+5. Técnicas analíticas
+6. Projeto final de análise de dados de beisebol
 
-The exercises were studied using course assignments and reference solutions. The repository is intended as study documentation and practical review, not as production or client code.
+Os exercícios foram estudados a partir de atividades do curso e soluções de referência. O repositório tem como objetivo documentar os estudos e apoiar revisões práticas, não apresentar código de produção ou de clientes.
 
-The SQL files were organized and commented to make the concepts easier to revisit and demonstrate.
+Os arquivos SQL foram organizados e comentados para facilitar a retomada dos conceitos e demonstrar o aprendizado.
