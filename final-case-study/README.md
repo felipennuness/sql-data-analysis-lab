@@ -1,89 +1,89 @@
-# Final Case Study — Baseball Data Analysis
+# Projeto Final — Análise de Dados de Beisebol
 
-## Overview
+## Visão geral
 
-The final SQL project combines the techniques practiced throughout the lab in a broader analytical case based on baseball data.
+O projeto final de SQL combina as técnicas praticadas ao longo do laboratório em um estudo analítico mais amplo, baseado em dados de beisebol.
 
-The reviewed implementation is organized around schools, team salaries, player careers, and player characteristics.
+A implementação revisada está organizada em torno de escolas, salários de times, carreiras de jogadores e características dos atletas.
 
-## Part I — School Analysis
+## Parte I — Análise de Escolas
 
-Questions covered:
+Perguntas abordadas:
 
-- How many player-producing schools existed in each decade?
-- Which schools produced the most distinct players?
-- Which schools ranked in the top three within each decade?
+- Quantas escolas formadoras de jogadores existiam em cada década?
+- Quais escolas formaram a maior quantidade de jogadores distintos?
+- Quais escolas ficaram entre as três primeiras em cada década?
 
-Main techniques:
+Principais técnicas:
 
-- Numeric functions
+- Funções numéricas
 - Joins
-- Aggregation
+- Agregação
 - CTEs
 - `DENSE_RANK()`
 
-## Part II — Salary Analysis
+## Parte II — Análise de Salários
 
-Questions covered:
+Perguntas abordadas:
 
-- Which teams fall in the top 20% for average annual spending?
-- How does cumulative team spending evolve over time?
-- In which year did each team first exceed $1B in cumulative payroll?
+- Quais times estão entre os 20% com maior gasto anual médio?
+- Como o gasto acumulado dos times evolui ao longo do tempo?
+- Em que ano cada time ultrapassou pela primeira vez US$ 1 bilhão em folha salarial acumulada?
 
-Main techniques:
+Principais técnicas:
 
-- Aggregation
+- Agregação
 - `NTILE()`
-- Window functions
-- Cumulative calculations
+- Funções de janela
+- Cálculos acumulados
 - CTEs
-- Threshold filtering
+- Filtros por limite
 
-## Part III — Player Career Analysis
+## Parte III — Análise da Carreira dos Jogadores
 
-Questions covered:
+Perguntas abordadas:
 
-- What were players' ages at debut and final game?
-- How long did each career last?
-- Which teams correspond to starting and ending seasons?
-- How many long-career players started and ended with the same team?
+- Quais eram as idades dos jogadores na estreia e no último jogo?
+- Quanto tempo durou cada carreira?
+- Quais times correspondem às temporadas inicial e final?
+- Quantos jogadores com carreiras longas começaram e terminaram no mesmo time?
 
-Main techniques:
+Principais técnicas:
 
-- Datetime functions
+- Funções de data e hora
 - Joins
-- Derived metrics
+- Métricas derivadas
 - CTEs
-- Conditional filtering
+- Filtros condicionais
 
-## Part IV — Player Comparison Analysis
+## Parte IV — Análise Comparativa de Jogadores
 
-Questions covered:
+Perguntas abordadas:
 
-- Which players share a birthday?
-- What percentage of players on each team bat right, left, or both?
-- How did average player height and weight change by decade?
+- Quais jogadores fazem aniversário na mesma data?
+- Qual percentual dos jogadores de cada time rebate com a mão direita, esquerda ou ambas?
+- Como a altura e o peso médios dos jogadores mudaram por década?
 
-Main techniques:
+Principais técnicas:
 
 - `GROUP_CONCAT()`
-- Deduplication before aggregation
-- Conditional aggregation
-- Pivot-style summaries
+- Remoção de duplicidades antes da agregação
+- Agregação condicional
+- Resumos no formato de tabela dinâmica
 - `LAG()`
-- Window functions
+- Funções de janela
 
-## Review notes
+## Observações da revisão
 
-The implementation is based on the course assignment and reference solution set rather than being presented as an independently designed production project.
+A implementação é baseada na atividade do curso e no conjunto de soluções de referência, e não é apresentada como um projeto de produção desenvolvido de forma independente.
 
-Two small refinements are explicitly documented in the SQL file:
+Dois pequenos ajustes estão documentados explicitamente no arquivo SQL:
 
-- the same-team / long-career question returns an actual count because the assignment asks "how many";
-- the shared-birthday query filters to birthdays with more than one player so the output matches the wording of the analytical question.
+- a pergunta sobre jogadores com carreira longa no mesmo time retorna uma contagem real, pois o enunciado pergunta "quantos";
+- a consulta de aniversários compartilhados filtra datas com mais de um jogador, para que o resultado corresponda ao objetivo da pergunta analítica.
 
-The decade school ranking also uses the tie-aware `DENSE_RANK()` alternative mentioned in the reference notes.
+A classificação das escolas por década também utiliza a alternativa `DENSE_RANK()`, que considera empates, mencionada nas notas de referência.
 
 ## SQL
 
-[View `baseball_analysis.sql`](baseball_analysis.sql)
+[Acessar `baseball_analysis.sql`](baseball_analysis.sql)
