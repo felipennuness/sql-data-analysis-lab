@@ -1,28 +1,28 @@
-# 01 — Joins & Relational Analysis
+# 01 — Joins e Análise Relacional
 
-## Scope
+## Escopo
 
-This section focuses on combining relational tables and understanding how join strategy changes the analytical result.
+Esta seção aborda a combinação de tabelas relacionais e como a estratégia de junção altera o resultado analítico.
 
-## Concepts practiced
+## Conceitos praticados
 
 - `LEFT JOIN`
-- Unmatched-record analysis
-- Join-key validation
-- Self joins
-- Comparing records within the same table
-- Preventing mirrored duplicate pairs in self-join output
+- Análise de registros sem correspondência
+- Validação de chaves de junção
+- Junções da tabela com ela mesma (self joins)
+- Comparação de registros dentro da mesma tabela
+- Prevenção de pares duplicados espelhados no resultado de self joins
 
-## Practice questions
+## Questões práticas
 
-The reviewed SQL file answers questions such as:
+O arquivo SQL revisado responde a perguntas como:
 
-- Which products exist in the product catalog but have never appeared in orders?
-- Are there order rows whose product key does not match the catalog?
-- Which different products are priced within $0.25 of each other?
+- Quais produtos existem no catálogo, mas nunca apareceram em pedidos?
+- Existem linhas de pedidos cuja chave de produto não corresponde ao catálogo?
+- Quais produtos diferentes possuem preços com diferença de até US$ 0,25?
 
 ## SQL
 
-[View `joins.sql`](joins.sql)
+[Acessar `joins.sql`](joins.sql)
 
-The file is published as reviewed course-based practice, not as original production code.
+O arquivo é publicado como exercício revisado com base no conteúdo do curso, e não como código original de produção.
