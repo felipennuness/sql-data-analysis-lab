@@ -1,30 +1,30 @@
-# 02 — Subqueries & CTEs
+# 02 — Subconsultas e CTEs
 
-## Scope
+## Escopo
 
-This section focuses on breaking complex analytical questions into smaller, reusable steps.
+Esta seção aborda a divisão de perguntas analíticas complexas em etapas menores e reutilizáveis.
 
-## Concepts practiced
+## Conceitos praticados
 
-- Subqueries in `SELECT`
-- Subqueries in `FROM`
-- Subqueries in `WHERE`
-- Common Table Expressions (`WITH`)
-- Multiple CTEs
-- Rewriting nested logic into more readable SQL
+- Subconsultas em `SELECT`
+- Subconsultas em `FROM`
+- Subconsultas em `WHERE`
+- Expressões de Tabela Comum (`WITH` / CTEs)
+- Múltiplas CTEs
+- Reescrita de lógicas aninhadas em SQL mais legível
 
-## Practice questions
+## Questões práticas
 
-The reviewed SQL file includes examples such as:
+O arquivo SQL revisado inclui exemplos como:
 
-- Comparing each product price with the overall average price
-- Showing each product together with the number of products from the same factory
-- Filtering products against a dynamically calculated reference set
-- Counting orders whose total value exceeds a threshold
-- Rewriting derived-table logic using multiple CTEs
+- Comparar o preço de cada produto com o preço médio geral
+- Exibir cada produto junto à quantidade de produtos da mesma fábrica
+- Filtrar produtos com base em um conjunto de referência calculado dinamicamente
+- Contar pedidos cujo valor total excede determinado limite
+- Reescrever a lógica de tabelas derivadas utilizando várias CTEs
 
 ## SQL
 
-[View `subqueries_ctes.sql`](subqueries_ctes.sql)
+[Acessar `subqueries_ctes.sql`](subqueries_ctes.sql)
 
-The file is published as reviewed course-based practice, not as original production code.
+O arquivo é publicado como exercício revisado com base no conteúdo do curso, e não como código original de produção.
