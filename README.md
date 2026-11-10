@@ -1,31 +1,31 @@
-# SQL Data Analysis Lab
+# Laboratório de Análise de Dados com SQL
 
-![SQL](https://img.shields.io/badge/SQL-Study%20%26%20Practice-336791)
+![SQL](https://img.shields.io/badge/SQL-Estudo%20e%20Pr%C3%A1tica-336791)
 ![MySQL](https://img.shields.io/badge/MySQL-Analytics-4479A1)
 
-> SQL study documentation with practical MySQL exercises covering relational analysis, CTEs, window functions, SQL functions, analytical techniques, and a final baseball analysis project.
+> Documentação de estudos de SQL com exercícios práticos em MySQL, abordando análise relacional, CTEs, funções de janela, funções SQL, técnicas analíticas e um projeto final de análise de beisebol.
 
-## Study Topics
+## Tópicos de estudo
 
-### 1. Joins
+### 1. Junções (Joins)
 
 - `LEFT JOIN`
-- unmatched records
-- self joins
-- relational comparisons
+- Registros sem correspondência
+- Junções da tabela com ela mesma (self joins)
+- Comparações relacionais
 
-[Notes](01-joins/README.md) • [SQL](01-joins/joins.sql)
+[Anotações](01-joins/README.md) • [SQL](01-joins/joins.sql)
 
-### 2. Subqueries & CTEs
+### 2. Subconsultas e CTEs
 
-- subqueries in `SELECT`, `FROM`, and `WHERE`
-- Common Table Expressions
-- multiple CTEs
-- multi-step queries
+- Subconsultas em `SELECT`, `FROM` e `WHERE`
+- Expressões de Tabela Comum (CTEs)
+- Múltiplas CTEs
+- Consultas em várias etapas
 
-[Notes](02-subqueries-ctes/README.md) • [SQL](02-subqueries-ctes/subqueries_ctes.sql)
+[Anotações](02-subqueries-ctes/README.md) • [SQL](02-subqueries-ctes/subqueries_ctes.sql)
 
-### 3. Window Functions
+### 3. Funções de janela
 
 - `ROW_NUMBER()`
 - `RANK()` / `DENSE_RANK()`
@@ -33,41 +33,41 @@
 - `NTILE()`
 - `PARTITION BY`
 
-[Notes](03-window-functions/README.md) • [SQL](03-window-functions/window_functions.sql)
+[Anotações](03-window-functions/README.md) • [SQL](03-window-functions/window_functions.sql)
 
-### 4. SQL Functions
+### 4. Funções SQL
 
-- numeric functions
-- date and time functions
-- string functions
-- pattern matching
-- NULL handling
+- Funções numéricas
+- Funções de data e hora
+- Funções de texto
+- Correspondência de padrões
+- Tratamento de valores `NULL`
 
-[Notes](04-sql-functions/README.md) • [SQL](04-sql-functions/sql_functions.sql)
+[Anotações](04-sql-functions/README.md) • [SQL](04-sql-functions/sql_functions.sql)
 
-### 5. Analytical Techniques
+### 5. Técnicas analíticas
 
-- duplicate analysis
-- conditional aggregation
-- pivot-style summaries
-- cumulative totals
-- moving averages
+- Análise de duplicidades
+- Agregação condicional
+- Resumos no formato de tabela dinâmica
+- Totais acumulados
+- Médias móveis
 
-[Notes](05-analytical-techniques/README.md) • [SQL](05-analytical-techniques/analytical_techniques.sql)
+[Anotações](05-analytical-techniques/README.md) • [SQL](05-analytical-techniques/analytical_techniques.sql)
 
-## Final Study Project — Baseball Analysis
+## Projeto final de estudo — Análise de beisebol
 
-The final exercise combines the topics above to analyze:
+O exercício final combina os tópicos anteriores para analisar:
 
-- player-producing schools;
-- team salaries and cumulative spending;
-- player careers;
-- batting-side distributions;
-- player height and weight trends by decade.
+- Escolas que formam jogadores;
+- Salários dos times e gastos acumulados;
+- Carreiras dos jogadores;
+- Distribuição por lado de rebatida;
+- Tendências de altura e peso dos jogadores por década.
 
-[Project notes](final-case-study/README.md) • [SQL](final-case-study/baseball_analysis.sql)
+[Anotações do projeto](final-case-study/README.md) • [SQL](final-case-study/baseball_analysis.sql)
 
-## Repository Structure
+## Estrutura do repositório
 
 ```text
 .
@@ -81,12 +81,12 @@ The final exercise combines the topics above to analyze:
 └── final-case-study/
 ```
 
-## Study Context
+## Contexto dos estudos
 
-The exercises were completed as part of SQL study using course material and reference solutions. The files in this repository are organized as personal study documentation and practical review notes.
+Os exercícios foram realizados como parte dos estudos de SQL, utilizando materiais do curso e soluções de referência. Os arquivos deste repositório estão organizados como documentação pessoal de estudo e anotações práticas para revisão.
 
-See [Study Context](COURSE_CONTEXT.md).
+Consulte [Contexto dos Estudos](COURSE_CONTEXT.md).
 
 ---
 
-**Luiz Felipe Nunes — BI Developer | Qlik | SQL | Data Analytics**
+**Luiz Felipe Nunes — Desenvolvedor de BI | Qlik | SQL | Análise de Dados**
