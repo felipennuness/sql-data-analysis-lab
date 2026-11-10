@@ -1,30 +1,30 @@
-# 04 — SQL Functions
+# 04 — Funções SQL
 
-## Scope
+## Escopo
 
-This section focuses on transforming, standardizing, and interpreting values directly in SQL.
+Esta seção aborda a transformação, padronização e interpretação de valores diretamente no SQL.
 
-## Concepts practiced
+## Conceitos praticados
 
-- Numeric functions
-- Datetime functions
-- String functions
-- Pattern / substring handling
-- NULL-handling functions
-- Ranking-assisted fallback logic
+- Funções numéricas
+- Funções de data e hora
+- Funções de texto
+- Tratamento de padrões / substrings
+- Funções para tratamento de valores `NULL`
+- Lógica alternativa com apoio de classificação
 
-## Practice questions
+## Questões práticas
 
-The reviewed SQL file includes examples such as:
+O arquivo SQL revisado inclui exemplos como:
 
-- Grouping customers into spending bands
-- Filtering Q2 orders and calculating an estimated ship date
-- Standardizing factory names and generating composite identifiers
-- Extracting text after a delimiter
-- Filling missing division values with either a generic label or the most common division for the same factory
+- Agrupar clientes em faixas de gasto
+- Filtrar pedidos do segundo trimestre (Q2) e calcular uma data estimada de envio
+- Padronizar nomes de fábricas e gerar identificadores compostos
+- Extrair o texto após um delimitador
+- Preencher valores ausentes de divisão com um rótulo genérico ou com a divisão mais comum da mesma fábrica
 
 ## SQL
 
-[View `sql_functions.sql`](sql_functions.sql)
+[Acessar `sql_functions.sql`](sql_functions.sql)
 
-The file is published as reviewed course-based practice, not as original production code.
+O arquivo é publicado como exercício revisado com base no conteúdo do curso, e não como código original de produção.
